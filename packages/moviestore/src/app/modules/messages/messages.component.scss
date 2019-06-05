@@ -1,0 +1,55 @@
+.message {
+    height: 100%;
+    margin-top: -60px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-bg {
+        background-image: url(/assets/images/hellboy-bg.jpg);
+        background-size: cover;
+        height: 70%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &:after {
+            content: '';
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    }
+
+    &-body {
+        width: 80%;
+        max-width: 400px;
+        border-radius: 9px;
+        height: auto;
+        z-index: 2;
+        background-color: rgba(245, 245, 245, 0.86);
+        padding: 2em 4em;
+
+        p {
+            font-weight: 100;
+            font-size: 14px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+    }
+
+    &-action{
+        display: flex;
+        justify-content: center;
+
+        a{
+            background-color: #0e78d6;
+            min-width: 200px;
+            color: white;
+        }
+    }
+}

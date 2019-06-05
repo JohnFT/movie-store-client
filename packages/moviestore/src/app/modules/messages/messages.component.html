@@ -1,0 +1,10 @@
+<section class="message">
+  <div class="message-bg"></div>
+  <div class="message-body" *ngIf="message">
+    <h1>{{ message.title }}</h1>
+    <p>{{ message.body }}</p>
+    <div class="message-action">
+      <a mat-button [routerLink]="message.url">{{ message.display }}</a>
+    </div>
+  </div>
+</section>
