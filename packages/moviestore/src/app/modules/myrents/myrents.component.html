@@ -1,0 +1,12 @@
+<section class="myrents">
+  <div class="myrents-bg"></div>
+  <div class="myrents-body">
+    <h1>Mi alquiler</h1>
+
+    <ul class="myrents-nav">
+      <li *ngFor="let movie of movies">
+        <a [routerLink]="['/ms', 'movie', movie.rent]">{{movie.name}}</a>
+      </li>
+    </ul>
+  </div>
+</section>

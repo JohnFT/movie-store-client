@@ -4,6 +4,10 @@
     width: 100%;
     height: 300px;
 
+    a {
+        text-decoration: none;
+    }
+
     &-rent {
         opacity: 0;
         color: white;
@@ -15,9 +19,11 @@
         font-size: 30px;
         background-color: rgba(0, 0, 0, 0.59);
         cursor: pointer;
-        h6{
+
+        h6 {
             margin-right: 10px;
         }
+
         &:hover {
             opacity: 1;
         }

@@ -1,6 +1,8 @@
-<div class="movie">
-  <div class="movie-rent">
-    <h6>Rent</h6>
-    <i class="fab fa-google-play"></i>
-  </div>
+<div class="movie" [style.background-image]="'url(' + movie.avatar + ')'">
+  <a [routerLink]="['/ms','renting', movie.id]">
+    <div class="movie-rent">
+      <h6>Rent</h6>
+      <i class="fab fa-google-play"></i>
+    </div>
+  </a>
 </div>

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core'
 import { Routes, RouterModule } from '@angular/router'
 import { RentingComponent } from './renting.component'
 
-const routes: Routes = [{ path: '', component: RentingComponent }]
+const routes: Routes = [{ path: ':id', component: RentingComponent }]
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

@@ -1,0 +1,31 @@
+<section class="movie" *ngIf="rental">
+  <div
+    *ngIf="movie"
+    class="movie-bg"
+    [style.background-image]="'url(' + movie.background + ')'"
+  ></div>
+
+  <div class="movie-body">
+    <h2>Movie</h2>
+    <div class="movie-content">
+      <div class="movie-code">
+        <ngx-qrcode [qrc-value]="id" qrc-class="code"></ngx-qrcode>
+      </div>
+      <div class="movie-data">
+        <div class="movie-text">
+          <h3>{{ movie.name }}</h3>
+          <p>{{ movie.description }}</p>
+          <p>{{ movie.gender }}</p>
+          <p>{{ movie.director }}</p>
+          <p>{{ movie.time }} Min</p>
+          <p>{{ rental.price | currency }}</p>
+          <p>{{ rental.initDate | date: 'dd/MM/yyyy' }}</p>
+        </div>
+        <div
+          class="movie-avatar"
+          [style.background-image]="'url(' + movie.avatar + ')'"
+        ></div>
+      </div>
+    </div>
+  </div>
+</section>

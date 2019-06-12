@@ -5,6 +5,7 @@ import {
   MatFormFieldModule,
   MatButtonModule
 } from '@angular/material'
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [],

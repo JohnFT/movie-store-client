@@ -1,74 +1,37 @@
-<div class="movies">
-  <div class="movies-primary">
+<div class="movies" *ngIf="movies">
+  <div
+    class="movies-primary"
+    [style.background-image]="'url(' + movie.background + ')'"
+  >
+    <a [routerLink]="['/ms', 'renting', movie.id]" class="movies-rent">
+      <h6>Rent</h6>
+      <i class="fab fa-google-play"></i>
+    </a>
     <div class="movies-info">
       <h2 class="movies-title">
-        Avengers: Endgame
+        {{ movie.name }}
       </h2>
       <div class="movies-stars">
-        <p>180 min</p>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+        <p>{{ movie.time }} min</p>
+        <i class="fas fa-star" [class.active]="movie.stars >= 1"></i>
+        <i class="fas fa-star" [class.active]="movie.stars >= 2"></i>
+        <i class="fas fa-star" [class.active]="movie.stars >= 3"></i>
+        <i class="fas fa-star" [class.active]="movie.stars >= 4"></i>
+        <i class="fas fa-star" [class.active]="movie.stars >= 5"></i>
+        <i class="fas fa-star" [class.active]="movie.stars === 5"></i>
       </div>
       <p class="movies-description">
-        Tras los sucesos de "Vengadores: Infinity War", los superhéroes que
-        sobrevivieron a Thanos se reunen para poner en práctica un plan
-        definitivo que podría acabar con el villano definitivamente. No saben si
-        funcionará, pero es su única oportunidad de intentarlo. Cuarta entrega
-        de la saga "Vengadores"
+        {{ movie.description }}
       </p>
       <p class="movies-gender">
-        Acción, Aventuras, Ciencia Ficción, Fantasía
+        {{ movie.gender }}
       </p>
-      <p class="movies-director">
-        Director: Joe Russo, Anthony Russo
-      </p>
+      <p class="movies-director">Director: {{ movie.director }}</p>
     </div>
   </div>
   <ul class="movies-list">
-    <li>
-      <app-movie></app-movie>
-    </li>
-    <li>
-      <app-movie></app-movie>
-    </li>
-    <li>
-      <app-movie></app-movie>
-    </li>
-    <li>
-      <app-movie></app-movie>
-    </li>
-    <li>
-      <app-movie></app-movie>
-    </li>
-    <li>
-      <app-movie></app-movie>
-    </li>
-    <li>
-      <app-movie></app-movie>
-    </li>
-    <li>
-      <app-movie></app-movie>
-    </li>
-    <li>
-      <app-movie></app-movie>
-    </li>
-    <li>
-      <app-movie></app-movie>
-    </li>
-    <li>
-      <app-movie></app-movie>
-    </li>
-    <li>
-      <app-movie></app-movie>
-    </li>
-    <li>
-      <app-movie></app-movie>
-    </li>
-    <li>
-      <app-movie></app-movie>
+    <li *ngFor="let movie of movies">
+      <app-movie [movie]="movie"></app-movie>
     </li>
   </ul>
 </div>

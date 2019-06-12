@@ -2,16 +2,19 @@
   <div class="login-bg"></div>
   <div class="login-form">
     <h1>Movie<span>Store</span></h1>
-    <form>
+    <form [formGroup]="formGroup">
       <mat-form-field class="fields">
-        <input matInput placeholder="User" required />
+        <input matInput placeholder="User" formControlName="user" />
+        <mat-error>{{getError('user')}}</mat-error>
       </mat-form-field>
       <mat-form-field class="fields">
-        <input type="password" matInput placeholder="Password" required />
+        <input type="password" matInput placeholder="Password" formControlName="pass" />
+        <mat-error>{{getError('pass')}}</mat-error>
       </mat-form-field>
       <a href="">forgot password?</a>
-      <button mat-button class="btn-login">Log in</button>
+      <button mat-button class="btn-login" (click)="handleClickLogin()">Log in</button>
       <p>Sign in <a href="">here</a></p>
+      <p class="mat-error" [hidden]="!error">{{error}}</p>
     </form>
   </div>
 </section>
