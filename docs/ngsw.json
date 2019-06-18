@@ -1,0 +1,132 @@
+{
+  "configVersion": 1,
+  "timestamp": 1560840950217,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/10.f8ff911fefa3daf2d393.js",
+        "/11.10c5bf7f19c47345aead.js",
+        "/12.8e2c528ca2da5d9bc4c6.js",
+        "/13.209d4056bcf7a6291e74.js",
+        "/14.110f9972303066dcc22a.js",
+        "/2.f01e145a4cf38df2f4d5.js",
+        "/7.81d46a2f531812b0cd2f.js",
+        "/8.2259ca1706c4a2f5d178.js",
+        "/9.0e1092907615f98998c5.js",
+        "/common.a92aa951b7b5fddb64ce.js",
+        "/es2015-polyfills.db000331a99eb032ccbd.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main.345f15455daea1a06c6e.js",
+        "/polyfills.3dabaa198e9c66fc76b8.js",
+        "/runtime.cf5f9b54a92f6ac2f118.js",
+        "/styles.faa5dc3e335ea5952f19.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/hellboy-bg.jpg",
+        "/assets/images/hellboy.png",
+        "/assets/images/login.jpg",
+        "/assets/images/movie.jpg",
+        "/fa-brands-400.03783c5172ee1ad128c5.eot",
+        "/fa-brands-400.073c2f3ce60eaf69cc27.svg",
+        "/fa-brands-400.7559b3774a0625e8ca6c.woff2",
+        "/fa-brands-400.ed2b8bf117160466ba62.ttf",
+        "/fa-brands-400.fe9d62e0d16a333a20e6.woff",
+        "/fa-regular-400.59215032a4397507b80e.ttf",
+        "/fa-regular-400.8fdea4e89ac405d9f8db.svg",
+        "/fa-regular-400.e07d9e40b26048d9abe2.woff2",
+        "/fa-regular-400.e5770f9863963fb57694.woff",
+        "/fa-regular-400.fc9c63c8224fb341fc93.eot",
+        "/fa-solid-900.4bced7c4c0d61d4f9886.woff",
+        "/fa-solid-900.acf50f59802f20d8b452.ttf",
+        "/fa-solid-900.b557f56e367e59344ca9.svg",
+        "/fa-solid-900.b5cf8ae26748570d8fb9.woff2",
+        "/fa-solid-900.ef3df98419d143d9617f.eot"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/10.f8ff911fefa3daf2d393.js": "9b0d0aea17fb518ac5dd536ef5fba2c31df6dc8c",
+    "/11.10c5bf7f19c47345aead.js": "69f06bafe0eac289555c3a6c81b69b9a156e885a",
+    "/12.8e2c528ca2da5d9bc4c6.js": "24624dde8465e2129114baa2b860cdfcb7067080",
+    "/13.209d4056bcf7a6291e74.js": "ba0ce63f9894fd15a35abdc153db08ab46955f82",
+    "/14.110f9972303066dcc22a.js": "1d15392856568d8e049dbb83ca31d7ace08ea3ea",
+    "/2.f01e145a4cf38df2f4d5.js": "85b909e9551f24755c44e7a67a578e54410713f1",
+    "/7.81d46a2f531812b0cd2f.js": "6771ba02a92b13e6650b6001dee7990d2ebb3046",
+    "/8.2259ca1706c4a2f5d178.js": "16f5cf589a11533b7dcb38a3c7ce610c1d7db372",
+    "/9.0e1092907615f98998c5.js": "321b34de14fa3016cc76b98a502122e3901ac7ab",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/images/hellboy-bg.jpg": "f25265d38e293d59665730234d27e5c30525e8b9",
+    "/assets/images/hellboy.png": "4d3791c666c199c1dcbcad4023044389d70ce0d6",
+    "/assets/images/login.jpg": "4868e4c0a842bd4c679ed8439d47fd1badc5cfd1",
+    "/assets/images/movie.jpg": "35199ce644b08872c933d4a40d5bf39687cdaf6c",
+    "/common.a92aa951b7b5fddb64ce.js": "85526c94b39111354b138af2616976b109615ad5",
+    "/es2015-polyfills.db000331a99eb032ccbd.js": "c60cd4ed764634f3541d981c0c9f51a78a6cbcea",
+    "/fa-brands-400.03783c5172ee1ad128c5.eot": "cad3317342dbe39e333569633f1c103e1d138722",
+    "/fa-brands-400.073c2f3ce60eaf69cc27.svg": "d219cda076ad129bb27cd994286db8ff8169e337",
+    "/fa-brands-400.7559b3774a0625e8ca6c.woff2": "a403af3337e6207d144b998b9c3bed439af562a9",
+    "/fa-brands-400.ed2b8bf117160466ba62.ttf": "07d3f17fa86ddf58c8442ec3bacbcee90fe42bdc",
+    "/fa-brands-400.fe9d62e0d16a333a20e6.woff": "4cb087035ebd3afa0c588f129d1549e532c06d18",
+    "/fa-regular-400.59215032a4397507b80e.ttf": "2833f486c98034276a8cf663f639bd985f360bd0",
+    "/fa-regular-400.8fdea4e89ac405d9f8db.svg": "73907af4519cd8b1c7f31a376349c8cedd145cc6",
+    "/fa-regular-400.e07d9e40b26048d9abe2.woff2": "c744217caa82b3245cffa2714aaf2ec9f749614d",
+    "/fa-regular-400.e5770f9863963fb57694.woff": "82875b3e31f4a2a8b9ed4e4b383e61ce3737267f",
+    "/fa-regular-400.fc9c63c8224fb341fc93.eot": "38b05dab032a14ed904c36877795be97417cb3cf",
+    "/fa-solid-900.4bced7c4c0d61d4f9886.woff": "0f6fcbf47ded1a1c6ace0f67383d512b6a053dad",
+    "/fa-solid-900.acf50f59802f20d8b452.ttf": "b7f728ec591ed9dd9028ed3deb6a536d0038c8d6",
+    "/fa-solid-900.b557f56e367e59344ca9.svg": "add1af0ce6d10a103c434b4edaa6c07acaaea3bc",
+    "/fa-solid-900.b5cf8ae26748570d8fb9.woff2": "07bed153d47f9129a944ee54dd72952deed074c8",
+    "/fa-solid-900.ef3df98419d143d9617f.eot": "acee4f1e361ccf995121f381b95424b6ec6b29c0",
+    "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/index.html": "214641d34e2d7b24e80f6790085d9b02fc1c7e01",
+    "/main.345f15455daea1a06c6e.js": "9e3967e2cdb8fbe1ce9c19d112fc739cdf2705ee",
+    "/polyfills.3dabaa198e9c66fc76b8.js": "5f4923abeec385cf71f83b3617f69cca0c450297",
+    "/runtime.cf5f9b54a92f6ac2f118.js": "a156259b5bec1b69fd484066c4af6d332cc26791",
+    "/styles.faa5dc3e335ea5952f19.css": "70de55adc511d1f7bba2e23faa2cba700390a507"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
