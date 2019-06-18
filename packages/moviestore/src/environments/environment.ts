@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  urls: 'https://movi-store-api.herokuapp.com/api/v1/',
-  path: 'https://johnft.github.io/movie-store-cliet'
-};
+  urls: 'https://mighty-meadow-73182.herokuapp.com/api/v1/',
+  path: 'https://johnft.github.io/movie-store-client/#/'
+}
 
 /*
  * For easier debugging in development mode, you can import the following file
