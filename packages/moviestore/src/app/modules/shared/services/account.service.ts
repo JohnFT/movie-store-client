@@ -18,14 +18,14 @@ export class AccountService {
   }
 
   public logOut(id: number): Observable<Account> {
-    return this.http.get<Account>(environment.urls + 'api/rental/logout/' + id)
+    return this.http.get<Account>(environment.urls + 'account/logout/' + id)
   }
 
   public add(account: Account): Observable<Account> {
-    return this.http.post<Account>(environment.urls + 'api/rental', account)
+    return this.http.post<Account>(environment.urls + 'account', account)
   }
 
   public update(account: Account): Observable<Account> {
-    return this.http.put<Account>(environment.urls + 'api/rental', account)
+    return this.http.put<Account>(environment.urls + 'account', account)
   }
 }

@@ -16,6 +16,7 @@ export class RentingComponent implements OnInit {
   public movie: Movie
   public form: FormGroup
   public count: number
+  public message: string
   constructor(
     private route: Router,
     private ar: ActivatedRoute,
@@ -91,7 +92,11 @@ export class RentingComponent implements OnInit {
       date: new Date()
     }
 
-    this.service.add(rental).subscribe(res => {
+    this.service.add(rental).subscribe((res: any) => {
+      if (res.error) {
+        this.message = res.message
+        return
+      }
       console.log(res)
       if (!res) {
         return this.route.navigate(['ms', 'message', 2])

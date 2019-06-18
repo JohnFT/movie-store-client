@@ -24,7 +24,8 @@
             "tsConfig": "packages/moviestore/tsconfig.app.json",
             "assets": [
               "packages/moviestore/src/favicon.ico",
-              "packages/moviestore/src/assets"
+              "packages/moviestore/src/assets",
+              "packages/moviestore/src/manifest.json"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
@@ -57,7 +58,9 @@
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "packages/moviestore/ngsw-config.json"
             }
           }
         },
@@ -92,7 +95,8 @@
             "scripts": [],
             "assets": [
               "packages/moviestore/src/favicon.ico",
-              "packages/moviestore/src/assets"
+              "packages/moviestore/src/assets",
+              "packages/moviestore/src/manifest.json"
             ]
           }
         },

@@ -3,6 +3,7 @@ import { Movie } from '../models/movie'
 import { HttpClient } from '@angular/common/http'
 import { environment } from 'packages/moviestore/src/environments/environment'
 import { Observable } from 'rxjs'
+import { Rent } from '../models/rent';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +19,11 @@ export class MovieService {
     return this.http.get<Movie[]>(environment.urls + 'movie/all?ids=' + ids)
   }
 
+  public findByAccount(id: number): Observable<Rent[]> {
+    return this.http.get<Rent[]>(environment.urls + 'movie/rents/' + id)
+  }
+
+  
   public findById(id: number): Observable<Movie> {
     return this.http.get<Movie>(environment.urls + 'movie/' + id)
   }

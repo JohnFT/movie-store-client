@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  urls: 'http://localhost:8080/MovieStoreApi-1.0.0/api/'
+  urls: 'https://movi-store-api.herokuapp.com/api/v1/',
+  path: 'https://johnft.github.io/movie-store-cliet'
 };
 
 /*

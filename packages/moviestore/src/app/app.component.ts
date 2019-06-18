@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
+import { SwUpdate } from '@angular/service-worker'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'moviestore';
+  title = 'moviestore'
+  constructor(private swUpdate: SwUpdate) {
+    if (this.swUpdate.isEnabled) {
+      swUpdate.available.subscribe(event => {
+        if (confirm('New version available. Load new Verssion?')) {
+          window.location.reload()
+        }
+      })
+    }
+  }
 }

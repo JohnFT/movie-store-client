@@ -4,9 +4,24 @@
     <h1>Mi alquiler</h1>
 
     <ul class="myrents-nav">
-      <li *ngFor="let movie of movies">
-        <a [routerLink]="['/ms', 'movie', movie.rent]">{{movie.name}}</a>
+      <li class="movie" *ngFor="let rent of rents">
+        <div
+          class="movie-avatar"
+          [style.background-image]="'url(' + rent.stock.movie.avatar + ')'"
+        ></div>
+        <div class="movie-info">
+          <h2>
+            <a [routerLink]="['/ms', 'movie', rent.id]" class="movie-name">{{
+              rent.stock.movie.name
+            }}</a>
+          </h2>
+
+          <p  class="movie-state">{{getState(rent)}}</p>
+        </div>
       </li>
     </ul>
+    <div *ngIf="!rents || !rents.length">
+      <h1>No hay reservas</h1>
+    </div>
   </div>
 </section>

@@ -4,6 +4,7 @@ import { MovieService } from '../shared/services/movie.service'
 import { Account } from '../shared/models/account'
 import { Movie } from '../shared/models/movie'
 import { take } from 'rxjs/operators'
+import { Rent } from '../shared/models/rent'
 @Component({
   selector: 'app-myrents',
   templateUrl: './myrents.component.html',
@@ -11,7 +12,7 @@ import { take } from 'rxjs/operators'
 })
 export class MyrentsComponent implements OnInit {
   public account: Account
-  public movies: Movie[]
+  public rents: Rent[] = []
 
   constructor(private rentServie: RentService, private service: MovieService) {
     this.account = localStorage.getItem('movies_user')
@@ -20,21 +21,22 @@ export class MyrentsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.rentServie
+    this.service
       .findByAccount(this.account.id)
       .pipe(take(1))
       .subscribe(rents => {
-        const ids = rents.map(re => re.id).join(',')
-        this.getMovies(ids)
+        this.rents = rents
       })
   }
 
-  private getMovies(ids: string) {
-    this.service
-      .getAllByIds(ids)
-      .pipe(take(1))
-      .subscribe(movies => {
-        this.movies = movies
-      })
+  public getState(rental: Rent): string {
+    if (!rental.initDate) {
+      return 'En almacen'
+    }
+    if (!rental.deliveryDate) {
+      return 'En prestamo'
+    }
+
+    return 'Entregada'
   }
 }

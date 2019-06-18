@@ -9,9 +9,13 @@
     <h2>Movie</h2>
     <div class="movie-content">
       <div class="movie-code">
-        <ngx-qrcode [qrc-value]="id" qrc-class="code"></ngx-qrcode>
+        
+        <ngx-qrcode
+          [qrc-value]="path +'/ms/reservate/' + id"
+          qrc-class="code"
+        ></ngx-qrcode>
       </div>
-      <div class="movie-data">
+      <div class="movie-data" *ngIf="movie">
         <div class="movie-text">
           <h3>{{ movie.name }}</h3>
           <p>{{ movie.description }}</p>

@@ -1,7 +1,7 @@
 import { Stock } from './stock'
 export class Rental {
   id: number
-  stock?: number
+  stockId?: number
   movie?: number
   initDate: Date
   days: number

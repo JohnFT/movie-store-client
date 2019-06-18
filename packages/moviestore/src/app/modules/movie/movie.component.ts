@@ -16,6 +16,7 @@ export class MovieComponent implements OnInit {
   public id: number
   public rental: Rental
   public movie: Movie
+  public path: string
 
   constructor(
     private route: Router,
@@ -23,7 +24,9 @@ export class MovieComponent implements OnInit {
     private rentalService: RentService,
     private stockService: StockService,
     private movieService: MovieService
-  ) {}
+  ) {
+    this.path = rentalService.path()
+  }
 
   ngOnInit() {
     this.router.params.subscribe(params => {
@@ -40,7 +43,7 @@ export class MovieComponent implements OnInit {
         this.rental = rental
 
         if (rental && rental.id) {
-          this.getStock(this.rental.stock)
+          this.getStock(this.rental.stockId)
         } else {
           this.route.navigate(['/ms', 'movies'])
         }
@@ -52,7 +55,7 @@ export class MovieComponent implements OnInit {
       .findById(id)
       .pipe(take(1))
       .subscribe(stock => {
-        this.getMovie(stock.movie)
+        this.getMovie(stock.movieId)
       })
   }
 
