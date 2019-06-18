@@ -6,7 +6,7 @@
     height: 40px;
     line-height: 0;
     padding: 10px;
-    z-index: 2;
+    z-index: 5;
 
     &-content {
 
@@ -15,30 +15,116 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         h1 {
             margin: 0;
             line-height: 1;
             font-size: 30px;
             text-shadow: 1px 1px 1px #676767;
             color: white;
+            width: 216px;
+            flex-shrink: 0;
+        }
 
-            a{
-                text-decoration: none;
-                color: white;
-            }
+        a {
+            text-decoration: none;
+            color: white;
+        }
 
-            span {
-                color: #0e78d6;
+        span {
+            color: #0e78d6;
+            cursor: pointer;
+        }
+
+        .responsive {
+            display: none;
+        }
+    }
+
+
+
+
+    &-nav {
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+
+            li {
+                padding: 10px;
+                list-style: none;
             }
         }
 
-
-    }
-
-    &-nav {
         a {
             color: white;
             text-decoration: none;
+        }
+
+        .responsive {
+            display: none;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 468px) {
+    .menu {
+        &-content {
+
+            .responsive {
+                font-size: 30px;
+                color: white;
+                display: block;
+            }
+        }
+
+        &-nav {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.84);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            display: none;
+
+            &.active {
+                display: block;
+            }
+
+            ul {
+                display: flex;
+                width: 100%;
+                text-align: center;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+
+                li {
+                    padding: 10px;
+                    font-size: 20px;
+
+                    a {
+                        padding: 20px;
+                        display: block;
+                    }
+                }
+            }
+
+            .responsive {
+                display: block;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                font-size: 30px;
+                color: white;
+            }
         }
     }
 }

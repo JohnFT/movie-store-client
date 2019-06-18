@@ -3,12 +3,21 @@
     <h1>
       <a [routerLink]="['/ms', 'movies']"> The Movies <span> Store</span></a>
     </h1>
-    <nav class="menu-nav">
+    <div class="responsive" >
+      <i class="fas fa-bars " (click)="handleMenu()"></i>
+    </div>
+    <nav class="menu-nav" [class.active]="showMenu">
       <ul>
         <li>
           <a [routerLink]="['/ms', 'myrents']">Mis alquilers</a>
         </li>
+        <li>
+          <span (click)="logOut()">Cerrar Sesión</span>
+        </li>
       </ul>
+      <div class="responsive">
+        <i class="fas fa-times" (click)="handleMenu()"></i>
+      </div>
     </nav>
   </div>
 </section>

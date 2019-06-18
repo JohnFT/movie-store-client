@@ -25,13 +25,16 @@
         background-color: rgba(0, 0, 0, 0.59);
         cursor: pointer;
         text-decoration: none;
-        h6{
+
+        h6 {
             margin-right: 10px;
         }
+
         &:hover {
             opacity: 1;
         }
     }
+
     &-stars {
         display: flex;
         margin: 5px 0;
@@ -42,7 +45,7 @@
             margin-right: 10px;
         }
 
-        i.active{
+        i.active {
             color: yellow
         }
     }
@@ -89,9 +92,36 @@
         margin: 0 auto;
         padding: 1rem;
         display: grid;
-        grid-template-columns: repeat(6, minmax(170px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
         grid-gap: 30px;
-        
+
     }
 
+}
+
+@media screen and(max-width: 468px) {
+    .movies {
+        &-primary {
+            height: 100%;
+        }
+
+        &-info {
+            background: linear-gradient(to right, #c1c1c1 0%, #000000 0%, #000000 0%, #000000cf 24%, #00000000 53%, #00000042 69%, #00000000 84%);
+            padding: 2.1em;
+        }
+
+        &-title {
+            font-size: 30px;
+        }
+
+        &-stars {
+            font-size: 13px;
+        }
+
+        &-description {
+            max-height: 120px;
+            overflow: hidden;
+        }
+
+    }
 }

@@ -94,3 +94,59 @@
         }
     }
 }
+
+@media screen and(max-width: 768px) {
+    .renting {
+        margin-top: 0;
+
+        &-body {
+            box-sizing: border-box;
+        }
+
+        &-movie {
+            display: block;
+
+            .movie {
+                &-image {
+                    margin-right: 20px;
+                    margin: 0 auto;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and(max-width: 768px) {
+    .renting {
+        margin-top: 0;
+
+        &-body {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+
+@media screen and(max-width: 768px) {
+    .renting {
+
+        &-value {
+            display: block;
+
+        }
+
+        &-rent {
+            display: block;
+            text-align: center;
+
+            .value {
+                padding: 30px;
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-layout',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout.component.scss']
 })
 export class LayoutComponent implements OnInit {
+  public showMenu =  false
+  constructor(private router: Router) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  public logOut() {
+    localStorage.clear()
+    this.router.navigate(['/'])
   }
 
+  public handleMenu() {
+    this.showMenu = !this.showMenu
+  }
 }

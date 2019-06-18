@@ -54,13 +54,14 @@
         overflow: auto;
         box-sizing: content-box;
         display: block;
-    
+
 
         .movie {
             margin: 0;
             padding: 0;
             display: flex;
             margin-bottom: 10px;
+
             &-info {
                 width: 100%;
             }
@@ -90,5 +91,20 @@
 
         }
     }
+
+}
+
+@media screen and(max-width: 468px) {
+    .myrents {
+        &-body{
+            padding: 1em;
+        }
+        &-nav {
+           .movie-name {
+               font-size: 20px;
+           }
+        }
+    }
+
 
 }
