@@ -8,6 +8,10 @@ const routes: Routes = [
     path: 'ms',
     loadChildren: './modules/layout/layout.module#LayoutModule',
     canActivate: [SessionGuard]
+  },
+  {
+    path: 'singin',
+    loadChildren: './modules/sign-in/sign-in.module#SignInModule'
   }
 ]
 

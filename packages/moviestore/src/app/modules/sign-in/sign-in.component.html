@@ -1,0 +1,31 @@
+<section class="login">
+  <div class="login-bg"></div>
+  <div class="login-form">
+    <h1>Movie<span>Store</span></h1>
+    <form [formGroup]="formGroup">
+      <mat-form-field class="fields">
+        <input matInput placeholder="nombre" formControlName="name" />
+        <mat-error>{{ getError('name') }}</mat-error>
+      </mat-form-field>
+      <mat-form-field class="fields">
+        <input matInput placeholder="usuario" formControlName="username" />
+        <mat-error>{{ getError('username') }}</mat-error>
+      </mat-form-field>
+      <mat-form-field class="fields">
+        <input
+          type="password"
+          matInput
+          placeholder="clave"
+          formControlName="password"
+        />
+        <mat-error>{{ getError('password') }}</mat-error>
+      </mat-form-field>
+      <button mat-button class="btn-login" (click)="handleCreate()">
+          Crear
+      </button>
+     
+      <p class="mat-error" [hidden]="!error">{{ error }}</p>
+    </form>
+  </div>
+</section>
+
